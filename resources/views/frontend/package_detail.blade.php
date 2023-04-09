@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
     <div class="container-fluid p-0">
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
@@ -87,6 +88,24 @@
                             </div>
                         @endif
                     @endforeach
+
+
+                    <div class="itenary-lists">
+                        <h3>Tour Plan</h3>
+                        @foreach ($package->plans as $plan)
+                            <div class="card my-3">
+                                <div class="card-header d-flex align-items-center justify-content-between">
+                                    <span>
+                                        {{ $plan->plan_title }}
+                                    </span>
+
+                                </div>
+                                <div class="card-body plan-expand">
+                                    {!! $plan->description !!}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
                 <div class="col-md-4 booking-panel">
                     <div class="card">
@@ -106,4 +125,10 @@
 @endsection
 @section('js')
     @vite(['resources/js/app.js'])
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        function expand(className) {
+            $('.plan-expand-' + className).toggle();
+        }
+    </script>
 @endsection
