@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Traits\Commentable;
 use DateTimeInterface;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -11,7 +12,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class Package extends Model implements HasMedia
 {
-    use InteractsWithMedia, HasFactory;
+    use InteractsWithMedia, HasFactory, Commentable;
 
     public $table = 'packages';
 
@@ -104,5 +105,10 @@ class Package extends Model implements HasMedia
         });
 
         return $files;
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class, 'commentable_id');
     }
 }

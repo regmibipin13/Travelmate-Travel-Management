@@ -13,6 +13,8 @@ Route::group(['as' => 'frontend.', 'namespace' => 'Frontend'], function () {
     Route::get('/blogs', 'PagesController@blogs')->name('blogs');
     Route::get('/contact', 'PagesController@contact')->name('contact');
     Route::post('/contact', 'PagesController@contactMail')->name('mail');
+    Route::post('/{package}/comment', 'PagesController@comment')->name('comment');
+    Route::delete('/comment/{comment}/delete', 'PagesController@deleteComment')->name('comment.delete');
 });
 // Route::redirect('/', '/login');
 Route::get('/home', function () {

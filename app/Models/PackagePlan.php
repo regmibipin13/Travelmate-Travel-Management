@@ -45,4 +45,9 @@ class PackagePlan extends Model implements HasMedia
     {
         return $this->belongsTo(Package::class, 'package_id');
     }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }

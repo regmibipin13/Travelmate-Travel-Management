@@ -90,4 +90,9 @@ class Post extends Model implements HasMedia
                 ->where('published_at', '<=', Carbon::now());
         });
     }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class, 'commentable_id');
+    }
 }

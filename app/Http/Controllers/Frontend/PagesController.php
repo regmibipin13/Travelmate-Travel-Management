@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Mail\ContactUsMail;
 use App\Models\Booking;
+use App\Models\Comment;
 use App\Models\Destination;
 use App\Models\Package;
 use App\Models\Post;
@@ -67,8 +68,15 @@ class PagesController extends Controller
 
     public function packageDetail(Package $package)
     {
-        $package->load(['package_type', 'destination', 'plans']);
+        $package->load(['package_type', 'destination', 'plans', 'comments']);
         return view('frontend.package_detail', compact('package'));
+    }
+
+    public function deleteComment(Comment $comment)
+    {
+        $comment->delete();
+
+        return redirect()->back()->with('success', 'Comment Deleted Successfully');
     }
 
     public function book(Package $package, Request $request)
@@ -91,6 +99,20 @@ class PagesController extends Controller
         ]);
 
         return response()->json(['status' => 'success', 'message' => 'Booking created successfully']);
+    }
+
+    public function comment(Package $package, Request $request)
+    {
+        $request->validate([
+            'parent_id' => 'nullable',
+            'name' => 'required',
+            'email' => 'required',
+            'phone' => 'required',
+            'comment' => 'required',
+        ]);
+        $package->saveComment($request);
+
+        return redirect()->back()->with('success', 'Comments added successfully');
     }
 
     public function contactMail(Request $request)

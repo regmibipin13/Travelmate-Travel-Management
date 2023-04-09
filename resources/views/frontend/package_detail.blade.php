@@ -120,6 +120,94 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row mt-3">
+                <div class="col-md-8">
+                    <h3>Comments</h3>
+                    <div class="card mb-3">
+                        <div class="card-header">Post your comment</div>
+                        <div class="card-body">
+                            <form action="{{ route('frontend.comment', $package->id) }}" method="POST">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="name">{{ __('Name') }}</label>
+                                    <input type="text" class="form-control" placeholder="Name" name="name">
+                                    @if ($errors->has('name'))
+                                        <p class="text-danger">
+                                            {{ $errors->first('name') }}
+                                        </p>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">{{ __('Email') }}</label>
+                                    <input type="text" class="form-control" placeholder="Email" name="email">
+                                    @if ($errors->has('email'))
+                                        <p class="text-danger">
+                                            {{ $errors->first('email') }}
+                                        </p>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">{{ __('Phone') }}</label>
+                                    <input type="text" class="form-control" placeholder="Phone" name="phone">
+                                    @if ($errors->has('phone'))
+                                        <p class="text-danger">
+                                            {{ $errors->first('phone') }}
+                                        </p>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment">{{ __('Comment') }}</label>
+                                    <textarea name="comment" id="comment" rows="4" placeholder="Enter a Comment" class="form-control"></textarea>
+                                    @if ($errors->has('phone'))
+                                        <p class="text-danger">
+                                            {{ $errors->first('phone') }}
+                                        </p>
+                                    @endif
+                                </div>
+                                <button class="btn btn-success btn-block">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Comments
+                        </div>
+
+                        <div class="card-body">
+                            @if (count($package->comments) > 0)
+                                @foreach ($package->comments as $comment)
+                                    <div class="single-comment border p-3 my-3">
+                                        <div class="user-details d-flex align-items-center">
+                                            <img src="https://icon-library.com/images/default-user-icon/default-user-icon-13.jpg"
+                                                alt="Default Image" width="50" height="50">
+                                            <span class="text-primary ml-3">{{ $comment->name }}</span>
+                                        </div>
+                                        <div class="comment my-3">
+                                            <p>
+                                                {!! $comment->comment !!}
+                                            </p>
+                                        </div>
+                                        @if (auth()->check())
+                                            <div class="actions">
+                                                <form action="{{ route('frontend.comment.delete', $comment->id) }}"
+                                                    method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                                </form>
+                                            </div>
+                                        @endif
+
+                                    </div>
+                                @endforeach
+                            @else
+                                <span class="text-center">No Comments for this package</span>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection
