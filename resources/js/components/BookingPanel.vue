@@ -75,8 +75,17 @@ export default {
             }
             var uri = `/package/${this.package.id}/book`;
             axios.post(uri, data).then((response) => {
-                $toast.success('Your Booking for the package is done. You will be soon notified by our helper');
-                this.is_booked = true;
+                if (response.data.hasOwnProperty('status')) {
+                    if (response.data.status == 'error') {
+                        $toast.error(response.data.message);
+                    } else {
+                        this.is_booked = true;
+                        $toast.success(response.data.message);
+                    }
+                } else {
+                    $toast.error('Response error from server');
+                }
+
             }).error((error) => {
                 $toast.error('Your Booking Process is failed . Please try again later');
             })
