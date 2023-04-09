@@ -24,6 +24,7 @@
 
         <div class="form-group">
             <label for="total">Total Amount</label>
+            &nbsp;
             <span>Rs. {{ total }}</span>
         </div>
         <button class="btn btn-block btn-danger" type="submit">

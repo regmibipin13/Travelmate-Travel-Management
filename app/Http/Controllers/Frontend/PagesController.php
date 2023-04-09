@@ -19,7 +19,7 @@ class PagesController extends Controller
         $sliders = Slider::all();
         $destinations = Destination::orderBy('total_places', 'desc')->limit(6)->get();
         $packages = Package::with('destination')->orderBy('id', 'desc')->limit(6)->get();
-        $blogs = Post::orderBy('id', 'desc')->limit(6)->get();
+        $blogs = Post::available()->orderBy('id', 'desc')->limit(6)->get();
         return view('frontend.home', [
             'sliders' => $sliders,
             'destinations' => $destinations,
@@ -54,7 +54,7 @@ class PagesController extends Controller
 
     public function blogs()
     {
-        $blogs = Post::orderBy('id', 'desc')->paginate(20);
+        $blogs = Post::available()->orderBy('id', 'desc')->paginate(20);
         return view('frontend.blogs', compact('blogs'));
     }
 
