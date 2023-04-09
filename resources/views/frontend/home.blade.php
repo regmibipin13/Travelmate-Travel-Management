@@ -108,33 +108,7 @@
             </div>
             <div class="row">
                 @foreach ($packages as $package)
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="package-item bg-white mb-2">
-                            <img class="img-fluid" src="{{ $package->display_image->url }}"
-                                alt="{{ $package->package_title }}">
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <small class="m-0"><i
-                                            class="fa fa-map-marker-alt text-primary mr-2"></i>{{ $package->destination->name }}</small>
-                                    <small class="m-0"><i
-                                            class="fa fa-calendar-alt text-primary mr-2"></i>{{ $package->duration }}
-                                        days</small>
-                                    <small class="m-0"><i
-                                            class="fa fa-user text-primary mr-2"></i>{{ $package->max_people }}
-                                        Person</small>
-                                </div>
-                                <a class="h5 text-decoration-none" href="">{{ $package->package_title }}</a>
-                                <div class="border-top mt-4 pt-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
-                                            <small>(250)</small>
-                                        </h6>
-                                        <h5 class="m-0">Rs. {{ $package->total_price }}</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @include('frontend.partials.package')
                 @endforeach
 
             </div>
@@ -152,29 +126,7 @@
             </div>
             <div class="row pb-3">
                 @foreach ($blogs as $blog)
-                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
-                            <div class="position-relative">
-                                <img class="img-fluid w-100" src="{{ $blog->display_image->url }}"
-                                    alt="{{ $blog->title }}">
-                                <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">
-                                        {{ Carbon\Carbon::parse($blog->published_at)->format('d') }}</h6>
-                                    <small
-                                        class="text-white text-uppercase">{{ Carbon\Carbon::parse($blog->published_at)->format('M') }}</small>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none"
-                                        href="">{{ $blog->post_category->name }}</a>
-                                </div>
-                                <a class="h5 m-0 text-decoration-none" href="">{{ $blog->title }}</a>
-                            </div>
-                        </div>
-                    </div>
+                    @include('frontend.partials.blog')
                 @endforeach
 
             </div>

@@ -10949,3 +10949,10 @@ h6,
     padding: 0;
     list-style-type: none;
 }
+.package-details-section {
+    padding: 30px 5px 30px 5px;
+}
+.package-details-section .icon i {
+    font-size: 30px;
+    color: #7AB730;
+}

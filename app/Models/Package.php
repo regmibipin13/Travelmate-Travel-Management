@@ -46,6 +46,16 @@ class Package extends Model implements HasMedia
         'deleted_at',
     ];
 
+    public static $descriptions = [
+        'overview',
+        'trip_highlights',
+        'trip_difficulties',
+        'best_season',
+        'accommodation',
+        'included',
+        'excluded',
+    ];
+
     protected function serializeDate(DateTimeInterface $date)
     {
         return $date->format('Y-m-d H:i:s');
@@ -65,6 +75,11 @@ class Package extends Model implements HasMedia
     public function destination()
     {
         return $this->belongsTo(Destination::class, 'destination_id');
+    }
+
+    public function plans()
+    {
+        return $this->hasMany(PackagePlan::class);
     }
 
     public function getDisplayImageAttribute()

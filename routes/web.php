@@ -3,6 +3,16 @@
 
 Route::group(['as' => 'frontend.', 'namespace' => 'Frontend'], function () {
     Route::get('/', 'PagesController@index')->name('home');
+    Route::get('/blogs/{slug}', 'PagesController@postDetail')->name('postDetail');
+    Route::get('/package/{package}', 'PagesController@packageDetail')->name('packageDetail');
+    Route::post('/package/{package}/book', 'PagesController@book');
+    Route::get('/about', 'PagesController@about')->name('about');
+    Route::get('/services', 'PagesController@services')->name('service');
+    Route::get('/packages', 'PagesController@packages')->name('packages');
+    Route::get('/destinations', 'PagesController@destinations')->name('destinations');
+    Route::get('/blogs', 'PagesController@blogs')->name('blogs');
+    Route::get('/contact', 'PagesController@contact')->name('contact');
+    Route::post('/contact', 'PagesController@contactMail')->name('mail');
 });
 // Route::redirect('/', '/login');
 Route::get('/home', function () {
