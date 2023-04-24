@@ -1,6 +1,7 @@
 <div class="col-lg-4 col-md-6 mb-4">
     <div class="package-item bg-white mb-2">
-        <img class="img-fluid" src="{{ $package->display_image->url }}" alt="{{ $package->package_title }}">
+        <img class="img-fluid" src="{{ $package->display_image->url }}" alt="{{ $package->package_title }}"
+            style="height: 250px;">
         <div class="p-4">
             <div class="d-flex justify-content-between mb-3">
                 <small class="m-0"><i
