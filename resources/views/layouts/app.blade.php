@@ -46,17 +46,15 @@
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a class="text-primary px-3" href="">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-whatsapp"></i>
                         </a>
                         <a class="text-primary px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fa fa-phone"></i>
                         </a>
                         <a class="text-primary px-3" href="">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="text-primary pl-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+
                     </div>
                 </div>
             </div>
@@ -77,11 +75,19 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
-                        <a href="{{ route('frontend.about') }}" class="nav-item nav-link">About</a>
-                        <a href="{{ route('frontend.service') }}" class="nav-item nav-link">Services</a>
-                        <a href="{{ route('frontend.packages') }}" class="nav-item nav-link">Tour Packages</a>
-                        <a href="{{ route('frontend.contact') }}" class="nav-item nav-link">Contact</a>
+                        <a href="{{ url('/') }}"
+                            class="nav-item nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
+                        <a href="{{ route('frontend.about') }}"
+                            class="nav-item nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
+                        <a href="{{ route('frontend.service') }}"
+                            class="nav-item nav-link {{ request()->is('services') ? 'active' : '' }}">Services</a>
+                        <a href="{{ route('frontend.packages') }}"
+                            class="nav-item nav-link {{ request()->is('packages') || request()->is('package/*') ? 'active' : '' }}">Tour
+                            Packages</a>
+                        <a href="{{ route('frontend.destinations') }}"
+                            class="nav-item nav-link {{ request()->is('destinations') ? 'active' : '' }}">Destinations</a>
+                        <a href="{{ route('frontend.contact') }}"
+                            class="nav-item nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact</a>
                     </div>
                 </div>
             </nav>
@@ -105,11 +111,13 @@
                     vero lorem dolor dolor</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
                 <div class="d-flex justify-content-start">
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="tel:+977-9869352017"><i
+                            class="fa fa-phone"></i></a>
                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                             class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                     <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -124,8 +132,8 @@
                             class="fa fa-angle-right mr-2"></i>Services</a>
                     <a class="text-white-50 mb-2" href="{{ url('/packages') }}"><i
                             class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50" href="{{ url('/blogs') }}"><i
-                            class="fa fa-angle-right mr-2"></i>Blogs</a>
+                    {{-- <a class="text-white-50" href="{{ url('/blogs') }}"><i
+                            class="fa fa-angle-right mr-2"></i>Blogs</a> --}}
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -139,8 +147,8 @@
                             class="fa fa-angle-right mr-2"></i>Services</a>
                     <a class="text-white-50 mb-2" href="{{ url('/packages') }}"><i
                             class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50" href="{{ url('/blogs') }}"><i
-                            class="fa fa-angle-right mr-2"></i>Blogs</a>
+                    {{-- <a class="text-white-50" href="{{ url('/blogs') }}"><i
+                            class="fa fa-angle-right mr-2"></i>Blogs</a> --}}
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -189,6 +197,9 @@
     <script src="{{ asset('js/frontend.js') }}"></script>
     @yield('js')
     @stack('after_scripts')
+
+    @include('partials.chatbot')
+
 </body>
 
 </html>
