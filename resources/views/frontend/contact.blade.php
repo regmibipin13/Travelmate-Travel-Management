@@ -23,8 +23,8 @@
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact</h6>
                 <h1>Contact For Any Query</h1>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
+            <div class="row">
+                <div class="col-lg-7">
                     <div class="contact-form bg-white" style="padding: 30px;">
                         <div id="success"></div>
                         <form name="sentMessage" id="contactForm" novalidate="novalidate"
@@ -61,6 +61,12 @@
                             </div>
                         </form>
                     </div>
+                </div>
+                <div class="col-lg-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.9357006421624!2d83.9795208751885!3d28.209266075898515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595cb9db21e19%3A0x1b943e541515c282!2sAble%20Innovation%20Pvt%20Ltd!5e0!3m2!1sen!2snp!4v1682412203536!5m2!1sen!2snp"
+                        height="400" width="100%" style="border:0;" allowfullscreen="true" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

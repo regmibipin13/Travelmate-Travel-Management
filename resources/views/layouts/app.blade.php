@@ -79,8 +79,8 @@
                             class="nav-item nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
                         <a href="{{ route('frontend.about') }}"
                             class="nav-item nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
-                        <a href="{{ route('frontend.service') }}"
-                            class="nav-item nav-link {{ request()->is('services') ? 'active' : '' }}">Services</a>
+                        {{-- <a href="{{ route('frontend.service') }}"
+                            class="nav-item nav-link {{ request()->is('services') ? 'active' : '' }}">Services</a> --}}
                         <a href="{{ route('frontend.packages') }}"
                             class="nav-item nav-link {{ request()->is('packages') || request()->is('package/*') ? 'active' : '' }}">Tour
                             Packages</a>
@@ -128,12 +128,11 @@
                             class="fa fa-angle-right mr-2"></i>About</a>
                     <a class="text-white-50 mb-2" href="{{ url('/destinations') }}"><i
                             class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="{{ url('/services') }}"><i
-                            class="fa fa-angle-right mr-2"></i>Services</a>
+                    {{-- <a class="text-white-50 mb-2" href="{{ url('/services') }}"><i
+                            class="fa fa-angle-right mr-2"></i>Services</a> --}}
                     <a class="text-white-50 mb-2" href="{{ url('/packages') }}"><i
                             class="fa fa-angle-right mr-2"></i>Packages</a>
-                    {{-- <a class="text-white-50" href="{{ url('/blogs') }}"><i
-                            class="fa fa-angle-right mr-2"></i>Blogs</a> --}}
+
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -143,12 +142,11 @@
                             class="fa fa-angle-right mr-2"></i>About</a>
                     <a class="text-white-50 mb-2" href="{{ url('/destinations') }}"><i
                             class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="{{ url('/services') }}"><i
-                            class="fa fa-angle-right mr-2"></i>Services</a>
+                    {{-- <a class="text-white-50 mb-2" href="{{ url('/services') }}"><i
+                            class="fa fa-angle-right mr-2"></i>Services</a> --}}
                     <a class="text-white-50 mb-2" href="{{ url('/packages') }}"><i
                             class="fa fa-angle-right mr-2"></i>Packages</a>
-                    {{-- <a class="text-white-50" href="{{ url('/blogs') }}"><i
-                            class="fa fa-angle-right mr-2"></i>Blogs</a> --}}
+
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
