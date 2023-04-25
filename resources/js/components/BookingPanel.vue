@@ -18,7 +18,7 @@
         <div class="form-group">
             <label for="total_people">Total People</label>
             <select v-model="total_person" id="total_people" class="form-control">
-                <option :value="n" v-for="(n, index) in package.max_people" :key="n">{{ n }}</option>
+                <option :value="n" v-for="(n, index) in peopleSelect" :key="n">{{ n }}</option>
             </select>
         </div>
 
@@ -95,6 +95,13 @@ export default {
     computed: {
         total() {
             return parseFloat(this.package.total_price) * parseInt(this.total_person ?? 0);
+        },
+        peopleSelect() {
+            var arr = [];
+            for (var i = 1; i <= this.package.max_people; i++) {
+                arr.push(i);
+            }
+            return arr;
         }
     },
     mounted() {
