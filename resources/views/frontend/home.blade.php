@@ -46,7 +46,8 @@
                         <div class="destination-item position-relative overflow-hidden mb-2">
                             <img class="img-fluid" src="{{ $destination->image->url }}" alt="{{ $destination->name }}"
                                 style="height: 250px;">
-                            <a class="destination-overlay text-white text-decoration-none" href="#">
+                            <a class="destination-overlay text-white text-decoration-none"
+                                href="{{ route('frontend.packages') }}?destination_id={{ $destination->id }}">
                                 <h5 class="text-white">{{ $destination->name }}</h5>
                                 <span>{{ $destination->total_places }} Places</span>
                             </a>

@@ -41,9 +41,14 @@ class PagesController extends Controller
     {
         return view('frontend.contact');
     }
-    public function packages()
+    public function packages(Request $request)
     {
-        $packages = Package::with('destination')->orderBy('id', 'desc')->paginate(20);
+        $packages = (new Package)->newQuery();
+
+        if ($request->has('destination_id') && $request->destination_id !== 'all') {
+            $packages->where('destination_id', $request->destination_id);
+        }
+        $packages = $packages->with('destination')->orderBy('id', 'desc')->paginate(20);
         return view('frontend.packages', compact('packages'));
     }
 

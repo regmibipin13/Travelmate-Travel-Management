@@ -135,19 +135,8 @@
 
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="{{ url('/about') }}"><i
-                            class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="{{ url('/destinations') }}"><i
-                            class="fa fa-angle-right mr-2"></i>Destination</a>
-                    {{-- <a class="text-white-50 mb-2" href="{{ url('/services') }}"><i
-                            class="fa fa-angle-right mr-2"></i>Services</a> --}}
-                    <a class="text-white-50 mb-2" href="{{ url('/packages') }}"><i
-                            class="fa fa-angle-right mr-2"></i>Packages</a>
-
-                </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <img src="{{ asset('img/footer_logo.png') }}" alt="Footer Logo" width="100%" height="100">
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
