@@ -107,7 +107,7 @@
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h2>
-                <h1>Pefect Tour and Trek Packages</h1>
+                <h1>Tripways Tour and Trek Packages</h1>
             </div>
             <div class="row">
                 @foreach ($packages as $package)
