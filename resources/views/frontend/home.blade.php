@@ -6,7 +6,8 @@
             <div class="carousel-inner">
                 @foreach ($sliders as $key => $slider)
                     <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
-                        <img class="w-100" src="{{ $slider->image->url }}" alt="{{ $slider->header }}">
+                        <img class="w-100" src="{{ $slider->image->url }}" alt="{{ $slider->header }}"
+                            style="height: 700px;object-fit: cover;">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h4 class="text-white text-uppercase mb-md-3">{{ $slider->header }}</h4>
