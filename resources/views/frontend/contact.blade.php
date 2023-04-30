@@ -1,4 +1,11 @@
 @extends('layouts.app')
+@section('css')
+    <style>
+        .a-color-white a {
+            color: black;
+        }
+    </style>
+@endsection
 @section('content')
     <!-- Header Start -->
     <div class="container-fluid page-header">
@@ -24,7 +31,7 @@
                 <h1>Contact For Any Query</h1>
             </div>
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                     <div class="contact-form bg-white" style="padding: 30px;">
                         <div id="success"></div>
                         <form name="sentMessage" id="contactForm" novalidate="novalidate"
@@ -62,11 +69,41 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.0263437586377!2d83.9623711!3d28.2065122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995954e8451f873%3A0x1b1bb88ed2702f96!2sTripways%20Travel%20And%20Tours%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1682663141225!5m2!1sen!2snp"
-                        width="100%" height="400" style="border:0;" allowfullscreen="true" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 py-3 border" style="background: lightgreen; color:black;">
+                            <h3>Hi, We Are Social,</h3>
+                            <p>Follow us for exclusive package details</p>
+                            <div class="d-flex justify-content-start">
+                                <a class="btn btn-outline-primary btn-square mr-2" href="tel:+977-9856038279"><i
+                                        class="fa fa-phone"></i></a>
+                                <a class="btn btn-outline-primary btn-square mr-2" href="viber://chat?number=9856038279"><i
+                                        class="fab fa-viber"></i></a>
+                                <a class="btn btn-outline-primary btn-square mr-2" href="https://wa.me/9856038279">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a class="btn btn-outline-primary btn-square"
+                                    href="https://www.instagram.com/tripways.travel/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-3">
+                            <h3>Contact Us</h3>
+                            <div>
+                                <p><i class="fa fa-map-marker-alt mr-2"></i>Street No.7 Lakeside,Pokhara-Nepal</p>
+                                <p><i class="fa fa-phone-alt mr-2"></i>+977 9856073733</p>
+                                <p><i class="fa fa-phone-alt mr-2"></i>+977 9802859900</p>
+                                <p><i class="fa fa-envelope mr-2"></i>tripwaystnt@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col-md-12 border p-3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.0263437586377!2d83.9623711!3d28.2065122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995954e8451f873%3A0x1b1bb88ed2702f96!2sTripways%20Travel%20And%20Tours%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1682663141225!5m2!1sen!2snp"
+                                width="100%" height="400" style="border:0;" allowfullscreen="true" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
