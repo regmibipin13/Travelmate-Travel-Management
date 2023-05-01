@@ -13,11 +13,6 @@
             transition: .5s;
             padding: 10px;
         }
-
-        /* .service-item:hover img {
-                background: #7AB730;
-                color: #FFFFFF;
-            } */
     </style>
 @endsection
 @section('content')

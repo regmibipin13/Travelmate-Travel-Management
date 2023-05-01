@@ -103,9 +103,9 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
         <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
+            <div class="col-lg-4 col-md-6 mb-5">
                 <a href="{{ url('/') }}" class="navbar-brand">
-                    <h1 class="text-primary"><span class="text-white">TRIPWAYS</span><br />TRAVELS</h1>
+                    <h1 class="text-primary"><span class="text-white mr-2">TRIPWAYS</span>TRAVELS</h1>
                 </a>
                 <p>We offers a range of services to travelers in Nepal, Tibet, and Bhutan, including trekking, guided
                     tours, thrill activities, and bike hiring. We feel pride on providing excellent services and aims to
@@ -130,13 +130,16 @@
                             class="fa fa-angle-right mr-2"></i>Home</a>
                     <a class="text-white-50 mb-2" href="{{ url('/packages') }}"><i
                             class="fa fa-angle-right mr-2"></i>Tour Packages</a>
-
                     <a class="text-white-50 mb-2" href="{{ url('/contact') }}"><i
                             class="fa fa-angle-right mr-2"></i>Contact</a>
+                    <a class="text-white-50 mb-2" href="{{ url('/destinations') }}"><i
+                            class="fa fa-angle-right mr-2"></i>Destinations</a>
+                    <a class="text-white-50 mb-2" href="{{ url('/about') }}"><i
+                            class="fa fa-angle-right mr-2"></i>About</a>
 
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-3 col-md-6">
                 <img src="{{ asset('img/footer_logo.png') }}" alt="Footer Logo" width="80%" height="100">
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
