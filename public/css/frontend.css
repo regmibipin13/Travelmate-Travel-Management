@@ -10806,10 +10806,10 @@ h6,
     transition: .5s;
 }
 
-.service-item:hover i {
+/* .service-item:hover i {
     background: #7AB730;
     color: #FFFFFF;
-}
+} */
 
 .package-item {
     transition: .5s;
@@ -10949,9 +10949,11 @@ h6,
     padding: 0;
     list-style-type: none;
 }
+
 .package-details-section {
     padding: 30px 5px 30px 5px;
 }
+
 .package-details-section .icon i {
     font-size: 30px;
     color: #7AB730;

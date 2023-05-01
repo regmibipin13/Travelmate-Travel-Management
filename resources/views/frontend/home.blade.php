@@ -1,4 +1,25 @@
 @extends('layouts.app')
+@section('css')
+    <style>
+        .service-item img {
+            width: 75px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #7AB730;
+            background: #FFFFFF;
+            color: #7AB730;
+            transition: .5s;
+            padding: 10px;
+        }
+
+        /* .service-item:hover img {
+                background: #7AB730;
+                color: #FFFFFF;
+            } */
+    </style>
+@endsection
 @section('content')
     <!-- Carousel Start -->
     <div class="container-fluid p-0">
@@ -89,7 +110,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
+                        {{-- <i class="fa fa-2x fa-hotel "></i> --}}
+                        <img src="{{ asset('img/raft.png') }}" alt="Rafting" class="mx-auto mb-4 fa-2x">
                         <h5 class="mb-2">Thrill-seeking Adventures Booking</h5>
                         <p class="m-0">Get ready to push your limits and test your courage with adrenaline-pumping
                             activities like

@@ -123,8 +123,8 @@
                             class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+            <div class="col-lg-2 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Quick Links</h5>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white-50 mb-2" href="{{ url('/') }}"><i
                             class="fa fa-angle-right mr-2"></i>Home</a>
@@ -136,8 +136,8 @@
 
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <img src="{{ asset('img/footer_logo.png') }}" alt="Footer Logo" width="100%" height="100">
+            <div class="col-lg-4 col-md-6">
+                <img src="{{ asset('img/footer_logo.png') }}" alt="Footer Logo" width="80%" height="100">
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
