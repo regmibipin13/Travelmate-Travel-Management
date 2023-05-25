@@ -71,7 +71,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="row">
-                        <div class="col-md-6 py-3 border" style="background: lightgreen; color:black;">
+                        <div class="col-md-6 py-3 border" style="color:black;">
                             <h3>Hi, We Are Social,</h3>
                             <p>Follow us for exclusive package details</p>
                             <div class="d-flex justify-content-start">
@@ -79,7 +79,7 @@
                                         class="fa fa-phone"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="viber://chat?number=9856038279"><i
                                         class="fab fa-viber"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="https://wa.me/9856038279">
+                                <a class="btn btn-outline-primary btn-square mr-2" href="https://wa.me/9802859900">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
                                 <a class="btn btn-outline-primary btn-square"
