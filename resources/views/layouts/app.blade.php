@@ -26,6 +26,26 @@
     <link href="{{ asset('css/frontend.css') }}" rel="stylesheet">
     @yield('css')
     @stack('after_styles')
+    <style>
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,7 +65,7 @@
                         <a class="text-primary px-3" href="viber://chat?number=9856038279">
                             <i class="fab fa-viber"></i>
                         </a>
-                        <a class="text-primary px-3" href="https://wa.me/9856038279">
+                        <a class="text-primary px-3" href="https://wa.me/9802859900">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                         <a class="text-primary px-3" href="tel:+977-9856038279">
@@ -182,8 +202,13 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
-            class="fa fa-angle-double-up"></i></a>
+    {{-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
+            class="fa fa-angle-double-up"></i></a> --}}
+
+    <a href="https://api.whatsapp.com/send?phone=9802859900&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+        class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
 
 
     <!-- JavaScript Libraries -->
