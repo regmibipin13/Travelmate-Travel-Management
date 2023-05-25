@@ -68,7 +68,8 @@
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="{{ url('/') }}" class="navbar-brand">
-                    <h1 class="m-0 text-primary"><span class="text-dark">TRIPWAYS </span>TRAVEL</h1>
+                    {{-- <h1 class="m-0 text-primary"><span class="text-dark">TRIPWAYS </span>TRAVEL</h1> --}}
+                    <img src="{{ asset('img/logo.png') }}" alt="Logo" class="img-fluid" width="200px">
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -116,11 +117,21 @@
                             class="fa fa-phone"></i></a>
                     <a class="btn btn-outline-primary btn-square mr-2" href="viber://chat?number=9856038279"><i
                             class="fab fa-viber"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="https://wa.me/9856038279">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://wa.me/9802859900">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                     <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/tripways.travel/"><i
                             class="fab fa-instagram"></i></a>
+                </div>
+
+                <div class="d-flex justify-content-start mt-2">
+                    <img src="https://i0.wp.com/xpressionbd.com/wp-content/uploads/2018/12/We-Accept.png?fit=1024%2C209&ssl=1"
+                        alt="Payment Options" width="500px" height="100" class="mr-5">
+
+                    <div>
+                        <h5 style="color: #fff;">Affiliated with</h5>
+                        <img src="{{ asset('img/affiliate.png') }}" alt="Affiliate" width="300px" height="200px">
+                    </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6 mb-5">
@@ -140,7 +151,9 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <img src="{{ asset('img/footer_logo.png') }}" alt="Footer Logo" width="80%" height="100">
+                <img src="{{ asset('img/footer_logo.jpeg') }}" alt="Footer Logo" width="80%" height="100"
+                    class="mb-2">
+                <h5 style="color: #fff;">Our service is your destination</h5>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
