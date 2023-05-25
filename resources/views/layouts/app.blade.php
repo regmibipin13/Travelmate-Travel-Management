@@ -68,7 +68,7 @@
                         <a class="text-primary px-3" href="https://wa.me/9802859900">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a class="text-primary px-3" href="tel:+977-9856038279">
+                        <a class="text-primary px-3" href="tel:+977-9856073733">
                             <i class="fa fa-phone"></i>
                         </a>
                         <a class="text-primary px-3" href="https://www.instagram.com/tripways.travel/">
@@ -133,7 +133,7 @@
                     make the travel experience stress-free and enjoyable for OUR clients.</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
                 <div class="d-flex justify-content-start">
-                    <a class="btn btn-outline-primary btn-square mr-2" href="tel:+977-9856038279"><i
+                    <a class="btn btn-outline-primary btn-square mr-2" href="tel:+977-9856073733"><i
                             class="fa fa-phone"></i></a>
                     <a class="btn btn-outline-primary btn-square mr-2" href="viber://chat?number=9856038279"><i
                             class="fab fa-viber"></i></a>
