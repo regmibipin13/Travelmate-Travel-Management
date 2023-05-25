@@ -45,6 +45,12 @@
         .my-float {
             margin-top: 16px;
         }
+
+        @media only screen and (max-width:724px) {
+            .affiliate {
+                flex-wrap: wrap;
+            }
+        }
     </style>
 </head>
 
@@ -144,9 +150,9 @@
                             class="fab fa-instagram"></i></a>
                 </div>
 
-                <div class="d-flex justify-content-start mt-2">
+                <div class="d-flex justify-content-start mt-2 affiliate">
                     <img src="https://i0.wp.com/xpressionbd.com/wp-content/uploads/2018/12/We-Accept.png?fit=1024%2C209&ssl=1"
-                        alt="Payment Options" width="500px" height="100" class="mr-5">
+                        alt="Payment Options" width="300" height="80" class="mr-5">
 
                     <div>
                         <h5 style="color: #fff;">Affiliated with</h5>
