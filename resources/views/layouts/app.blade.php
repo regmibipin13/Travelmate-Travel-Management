@@ -211,8 +211,7 @@
     {{-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
             class="fa fa-angle-double-up"></i></a> --}}
 
-    <a href="https://api.whatsapp.com/send?phone=9802859900&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
-        class="float" target="_blank">
+    <a href="https://wa.me/9802859900" class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
     </a>
 
