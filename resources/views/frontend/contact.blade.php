@@ -75,11 +75,11 @@
                             <h3>Hi, We Are Social,</h3>
                             <p>Follow us for exclusive package details</p>
                             <div class="d-flex justify-content-start">
-                                <a class="btn btn-outline-primary btn-square mr-2" href="tel:+977-9856038279"><i
+                                <a class="btn btn-outline-primary btn-square mr-2" href="tel:+977-9869352017"><i
                                         class="fa fa-phone"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="viber://chat?number=9856038279"><i
+                                <a class="btn btn-outline-primary btn-square mr-2" href="viber://chat?number=9869352017"><i
                                         class="fab fa-viber"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="https://wa.me/9802859900">
+                                <a class="btn btn-outline-primary btn-square mr-2" href="https://wa.me/9869352017">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
                                 <a class="btn btn-outline-primary btn-square"
@@ -90,9 +90,9 @@
                             <h3>Contact Us</h3>
                             <div>
                                 <p><i class="fa fa-map-marker-alt mr-2"></i>Street No.7 Lakeside,Pokhara-Nepal</p>
-                                <p><i class="fa fa-phone-alt mr-2"></i>+977 9856073733</p>
-                                <p><i class="fa fa-phone-alt mr-2"></i>+977 9802859900</p>
-                                <p><i class="fa fa-envelope mr-2"></i>tripwaystnt@gmail.com</p>
+                                <p><i class="fa fa-phone-alt mr-2"></i>+977 9869352017</p>
+                                <p><i class="fa fa-phone-alt mr-2"></i>+977 9869352017</p>
+                                <p><i class="fa fa-envelope mr-2"></i>tripway@gmail.com</p>
                             </div>
                         </div>
                     </div>

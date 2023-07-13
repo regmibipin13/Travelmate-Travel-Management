@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>@yield('site_title', 'Tripways Travels')</title>
+    <title>@yield('site_title', 'TravelMate')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -61,23 +61,23 @@
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>tripwaystnt@gmail.com</p>
+                        <p><i class="fa fa-envelope mr-2"></i>travelmate@gmail.com</p>
                         <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+977 9856073733</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+977 9869352017</p>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3" href="viber://chat?number=9856038279">
+                        <a class="text-primary px-3" href="viber://chat?number=9869352017">
                             <i class="fab fa-viber"></i>
                         </a>
-                        <a class="text-primary px-3" href="https://wa.me/9802859900">
+                        <a class="text-primary px-3" href="https://wa.me/9869352017">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a class="text-primary px-3" href="tel:+977-9856073733">
+                        <a class="text-primary px-3" href="tel:+977-9869352017">
                             <i class="fa fa-phone"></i>
                         </a>
-                        <a class="text-primary px-3" href="https://www.instagram.com/tripways.travel/">
+                        <a class="text-primary px-3" href="#">
                             <i class="fab fa-instagram"></i>
                         </a>
 
@@ -93,9 +93,10 @@
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="{{ url('/') }}" class="navbar-brand">
-                    {{-- <h1 class="m-0 text-primary"><span class="text-dark">TRIPWAYS </span>TRAVEL</h1> --}}
-                    <img src="{{ asset('img/logo.png') }}" alt="Logo" class="img-fluid" width="200px">
+                <a href="{{ url('/') }}" class="navbar-brand d-flex align-items-center">
+                    <img src="{{ asset('img/logo.png') }}" alt="Logo" class="img-fluid" width="80px">
+                    <h1 class="m-0 text-primary"><span class="text-dark">Travel </span>Mate</h1>
+
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -139,15 +140,14 @@
                     make the travel experience stress-free and enjoyable for OUR clients.</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
                 <div class="d-flex justify-content-start">
-                    <a class="btn btn-outline-primary btn-square mr-2" href="tel:+977-9856073733"><i
+                    <a class="btn btn-outline-primary btn-square mr-2" href="tel:+977-9869352017"><i
                             class="fa fa-phone"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="viber://chat?number=9856038279"><i
+                    <a class="btn btn-outline-primary btn-square mr-2" href="viber://chat?number=9869352017"><i
                             class="fab fa-viber"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="https://wa.me/9802859900">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://wa.me/9869352017">
                         <i class="fab fa-whatsapp"></i>
                     </a>
-                    <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/tripways.travel/"><i
-                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
 
                 <div class="d-flex justify-content-start mt-2 affiliate">
@@ -177,16 +177,16 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <img src="{{ asset('img/footer_logo.jpeg') }}" alt="Footer Logo" width="80%" height="100"
+                <img src="{{ asset('img/footer_logo.png') }}" alt="Footer Logo" width="80px" height="80px"
                     class="mb-2">
                 <h5 style="color: #fff;">Our service is your destination</h5>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
                 <p><i class="fa fa-map-marker-alt mr-2"></i>Street No.7 Lakeside,Pokhara-Nepal</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+977 9856073733</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+977 9802859900</p>
-                <p><i class="fa fa-envelope mr-2"></i>tripwaystnt@gmail.com</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+977 9869352017</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+977 9869352017</p>
+                <p><i class="fa fa-envelope mr-2"></i>travelmate@gmail.com</p>
             </div>
         </div>
     </div>
@@ -194,12 +194,12 @@
         style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#">tripwaystravels.com</a>. All Rights
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">travelmate.com</a>. All Rights
                     Reserved.</a>
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Developed by <a href="#">Bipin Regmi & Json KC</a>
+                <p class="m-0 text-white-50">Developed by <a href="#">Bipin Regmi</a>
                 </p>
             </div>
         </div>
@@ -211,7 +211,7 @@
     {{-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
             class="fa fa-angle-double-up"></i></a> --}}
 
-    <a href="https://wa.me/9802859900" class="float" target="_blank">
+    <a href="https://wa.me/9869352017" class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
     </a>
 
